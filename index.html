@@ -4,11 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer type="module" src="script.js"></script>
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Check CORS</h1>
-    <button class="btn-cors">btn</button>
+    <h1>form data</h1>
+    <form id="Form" action="">
+      <input
+        type="text"
+        placeholder="Filename"
+        id="name"
+        name="text"
+        value=" "
+      />
+      <input
+        type="file"
+        placeholder="image"
+        id="img"
+        name="img"
+        accept="image/*"
+      />
+      <input
+        type="text"
+        placeholder="script"
+        name="script"
+        id="script"
+        value=""
+        id=""
+      />
+      <input
+        type="text"
+        placeholder="price"
+        name="price"
+        id="price"
+        value=""
+        id=""
+      />
+      <button>Submit</button>
+    </form>
+    <script src="script.js"></script>
   </body>
 </html>
