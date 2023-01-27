@@ -19,6 +19,9 @@ const submitForm = (e) => {
   // console.log(form);
   fetch("http://localhost:8081/image/", {
     method: "POST",
+    headers: {
+      "Content-Type": "multipart/formdata",
+    },
     body: form,
   })
     .then((data) => data.json())
