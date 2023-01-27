@@ -17,11 +17,8 @@ const submitForm = (e) => {
   form.append("audio", audio);
 
   // console.log(form);
-  fetch("http://localhost:8081/image/", {
+  fetch("http://localhost:8081/upload/", {
     method: "POST",
-    headers: {
-      "Content-Type": "multipart/formdata",
-    },
     body: form,
   })
     .then((data) => data.json())
