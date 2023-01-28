@@ -17,7 +17,7 @@ const submitForm = (e) => {
   form.append("audio", audio);
 
   // console.log(form);
-  fetch("http://localhost:8081/upload/", {
+  fetch("http://localhost:8081/music/create", {
     method: "POST",
     body: form,
   })
